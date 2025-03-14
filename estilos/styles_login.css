@@ -97,7 +97,9 @@ footer{
     .contenedor_encabezado{
         display: flex;
         justify-content: center;
-        padding: 55px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 55px;
         background: linear-gradient(to bottom, #d11414, #8b0404);
     }
     .contenedor_encabezado h1{
