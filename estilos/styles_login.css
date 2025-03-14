@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.contenedor_encabezado{
+    display: flex;
+    justify-content: center;
+    padding: 55px;
+    background: linear-gradient(to bottom, #d11414, #8b0404);
+}
+.contenedor_encabezado h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 38px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background-image: url('/imagenes/Diseño\ sin\ título.png');
+    background-size: 9%;
+}
+
+.contenedor_botones{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contenedor_botones button{
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e2e1e1;
+    background: linear-gradient(to bottom, #d11414, #4d2121); 
+    background-position:center;
+    border-radius: 36px;
+    box-shadow: 0 5px #666;
+}
+
+.contenedor_botones button:hover{
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e2e1e1;
+    background: linear-gradient(to bottom, #fd0000, #4d2121);
+    background-position:center;
+    border-radius: 36px;
+    cursor: pointer;
+    box-shadow: 0 5px #666;
+
+}
+
+.contenedor_botones button:active{
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e2e1e1;
+    background: linear-gradient(to bottom, #fd0000, #4d2121);
+    background-position:center;
+    border-radius: 36px;
+    cursor: pointer;
+    transform: translateY(4px);
+    box-shadow: 0 5px #ffffff;
+}
+
+footer{
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #d11414, #242424);
+}
+
+@media screen and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Poppins;
+    }
+    
+    .contenedor_encabezado{
+        display: flex;
+        justify-content: center;
+        padding: 55px;
+        background: linear-gradient(to bottom, #d11414, #8b0404);
+    }
+    .contenedor_encabezado h1{
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    main{
+        display: flex;
+        justify-content: center;
+        background-image: url('/imagenes/Diseño\ sin\ título.png');
+        background-size: 9%;
+    }
+    
+    .contenedor_botones{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contenedor_botones button{
+        padding: 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #e2e1e1;
+        background: linear-gradient(to bottom, #d11414, #4d2121);
+        background-position:center;
+        border-radius: 36px;
+        box-shadow: 0 5px #666;
+    }
+    
+    .contenedor_botones button:hover{
+        padding: 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #e2e1e1;
+        background: linear-gradient(to bottom, #fd0000, #4d2121);
+        background-position:center;
+        border-radius: 36px;
+        cursor: pointer;
+        box-shadow: 0 5px #666;
+    
+    }
+    
+    .contenedor_botones button:active{
+        padding: 12px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #e2e1e1;
+        background: linear-gradient(to bottom, #fd0000, #4d2121);
+        background-position:center;
+        border-radius: 36px;
+        cursor: pointer;
+        transform: translateY(4px);
+        box-shadow: 0 5px #ffffff;
+    }
+    
+    footer{
+        padding: 20px;
+        flex-direction: column;
+        display: flex;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(45deg, #d11414, #242424);
+        font-size: 12px;
+    }
+}
