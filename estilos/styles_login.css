@@ -21,7 +21,7 @@
 main{
     display: flex;
     justify-content: center;
-    background-image: url('/imagenes/fondo_inicio.png');
+    background-image: url('../imagenes/fondo_inicio.png');
     background-size: 9%;
 }
 
@@ -60,7 +60,6 @@ main{
     border-radius: 36px;
     cursor: pointer;
     box-shadow: 0 5px #666;
-
 }
 
 .contenedor_botones button:active{
@@ -110,7 +109,7 @@ footer{
     main{
         display: flex;
         justify-content: center;
-        background-image: url('/imagenes/fondo_inicio.png');
+        background-image: url('../imagenes/fondo_inicio.png');
         background-size: 9%;
     }
     
