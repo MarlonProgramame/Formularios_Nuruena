@@ -21,7 +21,7 @@
 main{
     display: flex;
     justify-content: center;
-    background-image: url('/imagenes/Diseño\ sin\ título.png');
+    background-image: url('/imagenes/fondo_inicio.png');
     background-size: 9%;
 }
 
