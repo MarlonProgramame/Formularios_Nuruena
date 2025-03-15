@@ -44,7 +44,7 @@ form{
     margin-left: 15%;
     margin-right: 15%;
     background-color:#b83434d8;
-    border-radius: 8px;
+    border-radius: 16px;
     color: white;
     margin-bottom: 15px;
 }
@@ -58,6 +58,19 @@ form{
     padding-top: 3%;
     padding-bottom: 6%;
 }
+
+.padding_input input{
+    padding: 3px;
+    font-size: 14px;
+    width: 55%;
+}
+
+#cat_lic, #placa,{
+    padding: 3px;
+    font-size: 14px;
+    width: 55%;
+}
+
 .padding_2_titulo{
     padding: 5px;
     margin-left: 25%;
@@ -65,14 +78,21 @@ form{
     margin-top: 15px;
     margin-bottom: 15px;
     background-color:#b83434d8;
-    border-radius: 8px;
+    border-radius: 16px;
     color: white;
     text-align: center;
 }
 
 .input_2{
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     text-align: center;
+}
+
+.input_2 input, select{
+    padding: 3px;
+    font-size: 14px;
+    width: 25%;
 }
 
 .cont_tit_tablas{
@@ -82,13 +102,12 @@ form{
     margin-top: 15px;
     margin-bottom: 15px;
     background-color:#b83434d8;
-    border-radius: 8px;
+    border-radius: 16px;
     color: white;
 }
 input {
     border-color: black;
-    border-radius: 5px;
-    padding: 1px;
+    border-radius: 8px;
     background-color: #d6d6d6;
 }
 select{
