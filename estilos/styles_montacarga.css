@@ -65,7 +65,13 @@ form{
     width: 55%;
 }
 
-#cat_lic, #placa,{
+.padding_input select{
+    padding: 3px;
+    font-size: 14px;
+    width: 55%;
+}
+
+#cat_lic, #placa{
     padding: 3px;
     font-size: 14px;
     width: 55%;
