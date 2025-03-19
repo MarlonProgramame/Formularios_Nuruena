@@ -6,91 +6,95 @@
         <title>Formulario Motocicletas Nurueña S.A.S</title>
         <link rel="stylesheet" href="/estilos/styles_motocicletas.css">
     </head>
+    <!--Encabezado-->
+    <header>
+        <section class="cont_img_encabezado">
+            <article>
+                <img src="imagenes/encabezado_img.png" alt="Logo Nurueña S.A.S" title="Logo Nurueña S.A.S">
+            </article>
+        <!--Titulo Principal de la Pagina-->
+        <h1>Formulario Diario de Inspección Preoperativa de Motocicletas.</h1>
+        <!--Subtitulo-->
+        <h3>Inspección y revisión preoperativa de los vehículos antes de iniciar la operación diaria segun las normativas legales vigentes.</h3>
+        </section>
+        <section class="cont_indicaciones">
+            <!--Subtitulo de Indicaciones-->
+            <h3>Indicaciones</h3>
+            <!--Parrafo con las indicaciones-->
+            <p>
+                - Verifique la información detenidamente antes de enviar el formulario.<br/><br/>
+                - El simbolo <span style="color: red;">*</span> indica que son campos que se deben llenar obligatoriamente.<br/><br/>
+                - Los campos que se encuentren con estado <span style="color:red;">inactivo</span> usted podra modificarlos para actualizarlos.
+            </p>
+            <br/>
+            <hr/>
+        </section>
+    </header>
     <body>
-        <!--Encabezado-->
-        <header>
-            <section class="cont_img_encabezado">
-                <article>
-                    <img src="imagenes/encabezado_img.png" alt="Logo Nurueña S.A.S" title="Logo Nurueña S.A.S">
-                </article>
-            <!--Titulo Principal de la Pagina-->
-            <h1>Formulario Diario de Inspección Preoperativa de Motocicletas.</h1>
-            <!--Subtitulo-->
-            <h3>Inspección y revisión preoperativa de los vehículos antes de iniciar la operación diaria segun las normativas legales vigentes.</h3>
-            </section>
-            <section class="cont_indicaciones">
-                <!--Subtitulo de Indicaciones-->
-                <h3>Indicaciones</h3>
-                <!--Parrafo con las indicaciones-->
-                <p>
-                    - Verifique la información detenidamente antes de enviar el formulario.<br/><br/>
-                    - El simbolo <span style="color: red;">*</span> indica que son campos que se deben llenar obligatoriamente.<br/><br/>
-                    - Los campos que se encuentren con estado <span style="color:red;">inactivo</span> usted podra modificarlos para actualizarlos.
-                </p>
-                <br/>
-                <hr/>
-            </section>
-        </header>
         <main>
             <form>
                 <!--Section de Datos de la Persona que Realiza el Formulario.-->
                 <section class="cont_cond_lic">
                     <article>
                         <!--Subtitulo de Datos de la Persona que Realiza el Formulario.-->
-                        <h3>Conductor Responsable del Formulario:</h3>
+                        <h3>Conductor Responsable del Formulario</h3>
                         <!--Texto de Campo de Entrada.-->
                         <label for="id_cond">Ingrese su Numero de Documento <span style="color: red;">*</span></label>
-                        <br>
-                        <!--Espacio para Casilla de Ingreso de Datos para el Usuario de Documento.-->
-                        <input id="id_cond" name="id_cond" title="Complete este Campo." type="number" min="100000" max="999999999999" required>
-                        <br>
-                        <!--Texto de Campo de Entrada-->
-                        <label for="estado_cond">Estado del Conductor</label>
-                        <br>
-                        <!--Casilla de Estado.-->
-                        <input id="estado_cond" name="estado_cond" title="Estado." type="text" readonly>
-                        <br>
+                        <div class="cont_input_cond_lic">
+                            <!--Espacio para Casilla de Ingreso de Datos para el Usuario de Documento.-->
+                            <input id="id_cond" name="id_cond" title="Complete este Campo." type="number" min="100000" max="999999999999" required>
+                        </div>
+                            <!--Texto de Campo de Entrada-->
+                            <label for="estado_cond">Estado del Conductor</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Casilla de Estado.-->
+                            <input id="estado_cond" name="estado_cond" title="Estado." type="text" readonly>
+                        </div>
                         <!--Texto de Campo de Entrada de Apellidos.-->
-                        <label for="apell_cond">Apellidos:</label>
-                        <br>
-                        <!--Casilla donde se va Consultar y se va Autocompletar los Apellidos-->
-                        <input id="apell_cond" name="apell_cond" type="text" readonly>
-                        <br>
+                        <label for="apell_cond">Apellidos</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Casilla donde se va Consultar y se va Autocompletar los Apellidos-->
+                            <input id="apell_cond" name="apell_cond" type="text" readonly>
+                        </div>
                         <!--Texto de Campo de Entrada de Nombres-->
-                        <label for="nom_cond">Nombres:</label>
-                        <br>
-                        <!--Casilla donde se va Consultar y se va Autocompletar los Nombres.-->
-                        <input id="nom_cond" name="nom_cond" type="text" readonly>
+                        <label for="nom_cond">Nombres</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Casilla donde se va Consultar y se va Autocompletar los Nombres.-->
+                            <input id="nom_cond" name="nom_cond" type="text" readonly>
+                        </div>
                     </article>
                     <article>
                         <!--Subtitulo-->
-                        <h3>Licencia del Conductor:</h3>
+                        <h3>Licencia del Conductor</h3>
                         <!--Texto de Campo de Entrada.-->
-                        <label for="est_lic">Estado de la Licencia:</label>
+                        <label for="est_lic">Estado de la Licencia</label>
+                        <div class="cont_input_cond_lic">
                         <!--Casilla de Estado.-->
                         <input id="est_lic" name="est_lic" title="Estado." type="text" readonly>
-                        <!--Salto de Linea-->
-                        <br/>
+                        </div>
                         <!--Texto de Campo de Entrada .-->
-                        <label for="cat_lic" >Categoria de la Licencia de Conduccion:</label>
-                        <!--Casilla de Categoria de la Licencia.-->
-                        <select name="cat_lic" id="cat_lic" required>
-                            <!--Opciones de la Casilla desplegable.-->
-                            <option value="seleccione_una_opcion">Seleccione una Opción</option>
-                            <option value="a1">A1</option>
-                            <option value="a2">A2</OPtion>
-                            <option value="b1">B1</option>
-                            <option value="b2">B2</option>
-                            <option value="b3">B3</option>
-                            <option value="c1">C1</option>
-                            <option value="c2">C2</option>
-                            <option value="c3">C3</option>
-                        </select>
-                        <br/>
+                        <label for="cat_lic" >Categoria de la Licencia de Conduccion</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Casilla de Categoria de la Licencia.-->
+                            <select name="cat_lic" id="cat_lic" required>
+                                <!--Opciones de la Casilla desplegable.-->
+                                <option value="seleccione_una_opcion">Seleccione una Opción</option>
+                                <option value="a1">A1</option>
+                                <option value="a2">A2</OPtion>
+                                <option value="b1">B1</option>
+                                <option value="b2">B2</option>
+                                <option value="b3">B3</option>
+                                <option value="c1">C1</option>
+                                <option value="c2">C2</option>
+                                <option value="c3">C3</option>
+                            </select>
+                        </div>
                         <!--Texto de Campo de Entrada.-->   
-                        <label for="vig_lic">Vigencia de la Licencia de Conducción:</label>
-                        <!--Casilla donde se va Consultar y se va Autocompletar la Fecha de Fecha de Vencimiento de la Licencia-->
-                        <input id="vig_lic" name="vig_lic" type="date" required readonly>
+                        <label for="vig_lic">Vigencia de la Licencia de Conducción</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Casilla donde se va Consultar y se va Autocompletar la Fecha de Fecha de Vencimiento de la Licencia-->
+                            <input id="vig_lic" name="vig_lic" type="date" required readonly>
+                        </div>
                     </article>
                 </section>
                 <!--Linea de Separacion.-->
@@ -622,4 +626,7 @@
             </form>
         </main>
     </body>
+    <footer>
+
+    </footer>
 </html>

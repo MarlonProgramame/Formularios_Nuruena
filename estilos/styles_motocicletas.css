@@ -25,15 +25,16 @@
 }
 
 .cont_indicaciones{
+    margin: 22px;
     text-align: center;
 }
 
 .cont_indicaciones h3{
-    padding: 20px;
+    margin-bottom: 20px;
     color: #ff0000;
 }
 
-main{
+body{
     background-color: #d8d8d8;
 }
 
@@ -45,26 +46,50 @@ form{
 
 .cont_cond_lic{
     display: flex;
-    text-align: center;
     flex-wrap: wrap;
+    text-align: center;
+    padding: 48px;
+    gap: 4%;
 }
 
 .cont_cond_lic article{
-    width: 50%;
+    width: 48%;
 }
 
+.cont_cond_lic h3{
+    color: white;
+    background-color: #b83434d8;
+    padding: 5px;
+    border-radius: 16px;
+    width: 96%;
+    margin: auto;
+    margin-bottom: 15px;
+}
 
+.cont_input_cond_lic{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 
-
-
-
-
-
-
-
+.cont_input_cond_lic input,
+.cont_input_cond_lic select{
+    padding: 3px;
+    border-radius: 8px;
+    width: 60%;
+}
 
 @media (max-width: 768px) {
+
+    form{
+        margin: auto;
+    }
+
     .cont_cond_lic article {
         width: 100%; /* Hacemos que los artículos ocupen el 100% en pantallas pequeñas */
+    }
+
+    .cont_input_cond_lic input,
+    .cont_input_cond_lic select{
+    width: 100%;
     }
 }
