@@ -9,97 +9,95 @@
     <body>
         <!--Encabezado-->
         <header>
-            <figure>
-                <img src="imagenes/logo_nuru.png" alt="Logo Nurueña S.A.S" title="Logo Nurueña S.A.S">
-            </figure>
+            <section class="cont_img_encabezado">
+                <article>
+                    <img src="imagenes/encabezado_img.png" alt="Logo Nurueña S.A.S" title="Logo Nurueña S.A.S">
+                </article>
             <!--Titulo Principal de la Pagina-->
             <h1>Formulario Diario de Inspección Preoperativa de Motocicletas.</h1>
             <!--Subtitulo-->
             <h3>Inspección y revisión preoperativa de los vehículos antes de iniciar la operación diaria segun las normativas legales vigentes.</h3>
-            <br/>
-            <!--Subtitulo de Indicaciones-->
-            <h3 style="color: rgb(255, 0, 0);">Indicaciones</h3>
-            <!--Parrafo con las indicaciones-->
-            <p>
-                - Verifique la información detenidamente antes de enviar el formulario.<br/><br/>
-                - El simbolo <span style="color: red;">*</span> indica que son campos que se deben llenar obligatoriamente.<br/><br/>
-                - Los campos que se encuentren con estado <span style="color:red;">inactivo</span> usted podra modificarlos para actualizarlos.
-            </p>
-            <br/>
-            <hr/>
+            </section>
+            <section class="cont_indicaciones">
+                <!--Subtitulo de Indicaciones-->
+                <h3>Indicaciones</h3>
+                <!--Parrafo con las indicaciones-->
+                <p>
+                    - Verifique la información detenidamente antes de enviar el formulario.<br/><br/>
+                    - El simbolo <span style="color: red;">*</span> indica que son campos que se deben llenar obligatoriamente.<br/><br/>
+                    - Los campos que se encuentren con estado <span style="color:red;">inactivo</span> usted podra modificarlos para actualizarlos.
+                </p>
+                <br/>
+                <hr/>
+            </section>
         </header>
         <main>
             <form>
                 <!--Section de Datos de la Persona que Realiza el Formulario.-->
-                <section>
-                    <!--Subtitulo de Datos de la Persona que Realiza el Formulario.-->
-                    <h3>Conductor Responsable del Formulario:</h3>
-                    <!--Texto de Campo de Entrada.-->
-                    <label for="id_cond">Ingrese su Numero de Documento:</label>
-                    <!--Espacio para Casilla de Ingreso de Datos para el Usuario de Documento.-->
-                    <input id="id_cond" name="id_cond" title="Complete este Campo." type="number" min="100000" max="999999999999" required>
-                    <!--Asterisco de Obligatorio Color Rojo.-->
-                    <span style="color:red;">*</span>
-                    <!--Boton de prueba-->
-                    <button type="submit"> Consultar</button>
-                    <br/>
-                    <br/>
-                    <!--Texto de Campo de Entrada-->
-                    <label for="estado_cond">Estado del Conductor:</label>
-                    <!--Casilla de Estado.-->
-                    <input id="estado_cond" name="estado_cond" title="Estado." type="text" readonly>
-                    <!--Salto de Linea-->
-                    <br/>
-                    <br/>
-                    <!--Texto de Campo de Entrada de Apellidos.-->
-                    <label for="apell_cond">Apellidos:</label>
-                    <!--Casilla donde se va Consultar y se va Autocompletar los Apellidos-->
-                    <input id="apell_cond" name="apell_cond" type="text" readonly>
-                    <!--Texto de Campo de Entrada de Nombres-->
-                    <label for="nom_cond">Nombres:</label>
-                    <!--Casilla donde se va Consultar y se va Autocompletar los Nombres.-->
-                    <input id="nom_cond" name="nom_cond" type="text" readonly>
-                    <!--Salto de Linea-->
-                    <br/>
-                    <!--Subtitulo-->
-                    <h3>Licencia del Conductor:</h3>
-                    <!--Texto de Campo de Entrada.-->
-                    <label for="est_lic">Estado de la Licencia:</label>
-                    <!--Casilla de Estado.-->
-                    <input id="est_lic" name="est_lic" title="Estado." type="text" readonly>
-                    <!--Salto de Linea-->
-                    <br/>
-                    <br/>
-                    <!--Texto de Campo de Entrada .-->
-                    <label for="cat_lic" >Categoria de la Licencia de Conduccion:</label>
-                    <!--Casilla de Categoria de la Licencia.-->
-                    <select name="cat_lic" id="cat_lic" required>
-                        <!--Opciones de la Casilla desplegable.-->
-                        <option value="seleccione_una_opcion">Seleccione una Opción</option>
-                        <option value="a1">A1</option>
-                        <option value="a2">A2</OPtion>
-                        <option value="b1">B1</option>
-                        <option value="b2">B2</option>
-                        <option value="b3">B3</option>
-                        <option value="c1">C1</option>
-                        <option value="c2">C2</option>
-                        <option value="c3">C3</option>
-                    </select>
-                    <br/>
-                    <br/>
-                    <!--Texto de Campo de Entrada.-->   
-                    <label for="vig_lic">Vigencia de la Licencia de Conducción:</label>
-                    <!--Casilla donde se va Consultar y se va Autocompletar la Fecha de Fecha de Vencimiento de la Licencia-->
-                    <input id="vig_lic" name="vig_lic" type="date" required readonly>
-                    <!--Salto de Linea-->
-                    <br/>
-                    <br/>
-                    <!--Linea de Separacion.-->
-                    <hr/>
-                    <!--Subtitulo de Datos del Vehiculo.-->
+                <section class="cont_cond_lic">
+                    <article>
+                        <!--Subtitulo de Datos de la Persona que Realiza el Formulario.-->
+                        <h3>Conductor Responsable del Formulario:</h3>
+                        <!--Texto de Campo de Entrada.-->
+                        <label for="id_cond">Ingrese su Numero de Documento <span style="color: red;">*</span></label>
+                        <br>
+                        <!--Espacio para Casilla de Ingreso de Datos para el Usuario de Documento.-->
+                        <input id="id_cond" name="id_cond" title="Complete este Campo." type="number" min="100000" max="999999999999" required>
+                        <br>
+                        <!--Texto de Campo de Entrada-->
+                        <label for="estado_cond">Estado del Conductor</label>
+                        <br>
+                        <!--Casilla de Estado.-->
+                        <input id="estado_cond" name="estado_cond" title="Estado." type="text" readonly>
+                        <br>
+                        <!--Texto de Campo de Entrada de Apellidos.-->
+                        <label for="apell_cond">Apellidos:</label>
+                        <br>
+                        <!--Casilla donde se va Consultar y se va Autocompletar los Apellidos-->
+                        <input id="apell_cond" name="apell_cond" type="text" readonly>
+                        <br>
+                        <!--Texto de Campo de Entrada de Nombres-->
+                        <label for="nom_cond">Nombres:</label>
+                        <br>
+                        <!--Casilla donde se va Consultar y se va Autocompletar los Nombres.-->
+                        <input id="nom_cond" name="nom_cond" type="text" readonly>
+                    </article>
+                    <article>
+                        <!--Subtitulo-->
+                        <h3>Licencia del Conductor:</h3>
+                        <!--Texto de Campo de Entrada.-->
+                        <label for="est_lic">Estado de la Licencia:</label>
+                        <!--Casilla de Estado.-->
+                        <input id="est_lic" name="est_lic" title="Estado." type="text" readonly>
+                        <!--Salto de Linea-->
+                        <br/>
+                        <!--Texto de Campo de Entrada .-->
+                        <label for="cat_lic" >Categoria de la Licencia de Conduccion:</label>
+                        <!--Casilla de Categoria de la Licencia.-->
+                        <select name="cat_lic" id="cat_lic" required>
+                            <!--Opciones de la Casilla desplegable.-->
+                            <option value="seleccione_una_opcion">Seleccione una Opción</option>
+                            <option value="a1">A1</option>
+                            <option value="a2">A2</OPtion>
+                            <option value="b1">B1</option>
+                            <option value="b2">B2</option>
+                            <option value="b3">B3</option>
+                            <option value="c1">C1</option>
+                            <option value="c2">C2</option>
+                            <option value="c3">C3</option>
+                        </select>
+                        <br/>
+                        <!--Texto de Campo de Entrada.-->   
+                        <label for="vig_lic">Vigencia de la Licencia de Conducción:</label>
+                        <!--Casilla donde se va Consultar y se va Autocompletar la Fecha de Fecha de Vencimiento de la Licencia-->
+                        <input id="vig_lic" name="vig_lic" type="date" required readonly>
+                    </article>
                 </section>
+                <!--Linea de Separacion.-->
+                <hr/>
                 <!--Section de Datos del Vehiculo.-->
                 <section>
+                    <!--Subtitulo de Datos del Vehiculo.-->
                     <h3>Datos del Vehiculo:</h3>
                     <!--Texto de Campo de Entrada-->
                     <label for="placa">Placa del Vehiculo:</label>
@@ -115,13 +113,11 @@
                     <span style="color:red;">*</span>
                     <!--Salto de Linea.-->
                     <br/>
-                    <br/>
                     <!--Texto de Campo de Entrada.-->
                     <label for="est_veh">Estado del Vehiculo:</label>
                     <!--Campo de Estado del Vehiculo-->
                     <input id="est_veh" name="est_veh" title="Estado del Vehiculo." type="text" readonly>
                     <!--Salto de Linea.-->
-                    <br/>
                     <br/>
                     <!--Texto Kilometraje Actual del Vehiculo.-->
                     <label for="kilometraje">Kilometraje Actual del Vehiculo:</label>
@@ -130,7 +126,6 @@
                     <!--Asterisco de Obligatorio Color Rojo.-->
                     <span style="color:red;">*</span>
                     <!--Salto de Linea.-->
-                    <br/>
                     <br/>
                     <!--Fila de Nivel de Combustible-->
                     <label for="niv_combustible">Nivel de Combustible</label>
@@ -146,12 +141,10 @@
                     <!--Asterisco de Obligatorio Color Rojo.-->
                     <span style="color: red;">*</span>
                     <br>
-                    <br>
                     <label for="venc_soat">Fecha Vencimiento del SOAT:</label>
                     <!--Campo de Fecha del Vencimiento del SOAT.-->
                     <input id="venc_soat" name="venc_soat" type="date" readonly>
                     <!--Salto de Linea.-->
-                    <br/>
                     <br/>
                     <!--Texto de Fecha de Vencimiento Tecnomecanica.-->
                     <label for="ven_tecno">Fecha Vencimiento de Tecnomecanica:</label>
@@ -159,14 +152,10 @@
                     <input id="ven_tecno" name="ven_tecno" type="date" readonly>
                     <!--Salto de Linea.-->
                     <br/>
-                    <br/>
                     <!--Titulo de Poliza Vigencia (Seguro).-->
                     <label for="vig_poliza">Vigencia de Poliza (Seguro)</label>
                     <!--Campo de Vigencia de Poliza.-->
                     <input id="vig_poliza" name="vig_poliza" type="date" readonly>
-                    <br>
-                    <br>
-                    <hr>
                 </section>
                 <!--Sección de Aceite.-->
                 <section>
@@ -210,12 +199,7 @@
                             <td><input type="radio" id="estado_fuga_aceite_no_aplica" value="no_aplica" name="estado_fuga_aceite" required></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
-
-
-
-
                     <!--Section Estado de liquidos.-->
                 <section>
                     <!--Titulo Estado de Liquidos.-->
@@ -242,7 +226,6 @@
                             <td><input type="radio" id="estado_liq_refrig_no_aplica" value="no_aplica" name="estado_liq_refrig" required></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
                 <section>
                     <!--Titulo de Fuga de Liquidos.-->
@@ -276,7 +259,6 @@
                             <td><input type="radio" id="estado_fuga_liq_frenos_no_aplica" value="no_aplica" name="estado_fuga_liq_frenos" required></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
                 <section>
                     <!--Titulo Estado Mecánico.-->
@@ -380,7 +362,6 @@
                             <td><input type="radio" id="estado_exosto_bueno" value="bueno" name="estado_exosto" required></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
                 <section>
                     <!--Titulo Estado Luces.-->
@@ -442,7 +423,6 @@
                             <td><input type="radio" id="estado_luz_freno_no_aplica" value="no_aplica" name="estado_luz_freno" required></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
                 <section>
                     <!--Titulo Estado de Llantas y Rines-->
@@ -504,7 +484,6 @@
                             <td><input type="radio" id="estado_defor_llanta_no_aplica" value="no_aplica" name="estado_defor_llanta"></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
                 <section>
                     <!--Titulo Estado General-->
@@ -580,7 +559,6 @@
                             <td><input type="radio" id="estado_placa_no_aplica" value="no_aplica" name="estado_placa"></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
                 <section>
                     <!--Titulo Equipo de Seguridad.-->
@@ -621,7 +599,6 @@
                             <td><input type="radio" id="estado_herramienta_no_aplica" value="no_aplica" name="estado_herramienta"></td>
                         </tr>
                     </table>
-                    <br>
                 </section>
                 <section>
                     <!--Titulo Estado Fisico.-->
