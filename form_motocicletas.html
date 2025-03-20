@@ -73,7 +73,7 @@
                         <input id="est_lic" name="est_lic" title="Estado." type="text" readonly>
                         </div>
                         <!--Texto de Campo de Entrada .-->
-                        <label for="cat_lic" >Categoria de la Licencia de Conduccion</label>
+                        <label for="cat_lic" >Categoria de la Licencia de Conducción</label>
                         <div class="cont_input_cond_lic">
                             <!--Casilla de Categoria de la Licencia.-->
                             <select name="cat_lic" id="cat_lic" required>
@@ -99,116 +99,131 @@
                 </section>
                 <!--Linea de Separacion.-->
                 <hr/>
+                <section  class="cont_titulo_dat_veh">
+                    <article>
+                        <!--Subtitulo de Datos del Vehiculo.-->
+                        <h3>Datos del Vehiculo</h3>
+                    </article>  
+                </section>   
                 <!--Section de Datos del Vehiculo.-->
-                <section>
-                    <!--Subtitulo de Datos del Vehiculo.-->
-                    <h3>Datos del Vehiculo:</h3>
-                    <!--Texto de Campo de Entrada-->
-                    <label for="placa">Placa del Vehiculo:</label>
-                    <!--Casilla Desplegable de Placa-->
-                    <select id="placa" name="placa" required>
-                    <!--Opciones de la Casilla desplegable. (EJEMPLO PARA MOSTRAR.)-->
-                        <option value="">Seleccione una Opción</option>
-                        <option value="wlm461">AAA00A</option>
-                        <option value="sor737">AAA00B</option>
-                        <option value="eqq163">AAA00C</option>
-                    </select>
-                    <!--Asterisco de Obligatorio Color Rojo.-->
-                    <span style="color:red;">*</span>
-                    <!--Salto de Linea.-->
-                    <br/>
-                    <!--Texto de Campo de Entrada.-->
-                    <label for="est_veh">Estado del Vehiculo:</label>
-                    <!--Campo de Estado del Vehiculo-->
-                    <input id="est_veh" name="est_veh" title="Estado del Vehiculo." type="text" readonly>
-                    <!--Salto de Linea.-->
-                    <br/>
-                    <!--Texto Kilometraje Actual del Vehiculo.-->
-                    <label for="kilometraje">Kilometraje Actual del Vehiculo:</label>
-                    <!--Campo de Kilometraje-->
-                    <input id="kilometraje" name="kilometraje" title="Complete este Campo." type="number" min="0" max="999999" required>
-                    <!--Asterisco de Obligatorio Color Rojo.-->
-                    <span style="color:red;">*</span>
-                    <!--Salto de Linea.-->
-                    <br/>
-                    <!--Fila de Nivel de Combustible-->
-                    <label for="niv_combustible">Nivel de Combustible</label>
-                    <select name="niv_combustible" id="niv_combustible" required>
-                        <option value="">Seleccione una Opción</option>
-                        <option value="tanq_lleno">Tanque completamente lleno</option>
-                        <option value="tanq_medio_lleno">Tanque parcialmente lleno</option>
-                        <option value="tanq_medio">Tanque medio</option>
-                        <option value="tanq_medio_bajo">Tanque medio bajo</option>
-                        <option value="tanq_bajo">Tanque con bajo nivel</option>
-                        <option value="tanq_vacio">Tanque vacío</option>
-                    </select>
-                    <!--Asterisco de Obligatorio Color Rojo.-->
-                    <span style="color: red;">*</span>
-                    <br>
-                    <label for="venc_soat">Fecha Vencimiento del SOAT:</label>
-                    <!--Campo de Fecha del Vencimiento del SOAT.-->
-                    <input id="venc_soat" name="venc_soat" type="date" readonly>
-                    <!--Salto de Linea.-->
-                    <br/>
-                    <!--Texto de Fecha de Vencimiento Tecnomecanica.-->
-                    <label for="ven_tecno">Fecha Vencimiento de Tecnomecanica:</label>
-                    <!--Campo fecha de Vencimiento Tecnomecanica-->
-                    <input id="ven_tecno" name="ven_tecno" type="date" readonly>
-                    <!--Salto de Linea.-->
-                    <br/>
-                    <!--Titulo de Poliza Vigencia (Seguro).-->
-                    <label for="vig_poliza">Vigencia de Poliza (Seguro)</label>
-                    <!--Campo de Vigencia de Poliza.-->
-                    <input id="vig_poliza" name="vig_poliza" type="date" readonly>
+                <section class="cont_cond_lic">
+                    <article>
+                        <!--Texto de Campo de Entrada-->
+                        <label for="placa">Placa del Vehiculo <span style="color:red;">*</span></label>
+                        <div class="cont_input_cond_lic">
+                            <!--Casilla Desplegable de Placa-->
+                            <select id="placa" name="placa" required>
+                            <!--Opciones de la Casilla desplegable. (EJEMPLO PARA MOSTRAR.)-->
+                                <option value="">Seleccione una Opción</option>
+                                <option value="wlm461">AAA00A</option>
+                                <option value="sor737">AAA00B</option>
+                                <option value="eqq163">AAA00C</option>
+                            </select>
+                        </div>
+                        <!--Texto de Campo de Entrada.-->
+                        <label for="est_veh">Estado del Vehiculo:</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Campo de Estado del Vehiculo-->
+                            <input id="est_veh" name="est_veh" title="Estado del Vehiculo." type="text" readonly>
+                        </div>
+                        <!--Texto Kilometraje Actual del Vehiculo.-->
+                        <label for="kilometraje">Kilometraje Actual del Vehiculo <span style="color:red;">*</span></label>                            <!--Asterisco de Obligatorio Color Rojo.-->
+                            
+                        <div class="cont_input_cond_lic">
+                            <!--Campo de Kilometraje-->
+                            <input id="kilometraje" name="kilometraje" title="Complete este Campo." type="number" min="0" max="999999" required>
+                        </div>
+                        <!--Fila de Nivel de Combustible-->
+                        <label for="niv_combustible">Nivel de Combustible <span style="color: red;">*</span></label>
+                        <div class="cont_input_cond_lic">
+                            <select name="niv_combustible" id="niv_combustible" required>
+                                <option value="">Seleccione una Opción</option>
+                                <option value="tanq_lleno">Tanque completamente lleno</option>
+                                <option value="tanq_medio_lleno">Tanque parcialmente lleno</option>
+                                <option value="tanq_medio">Tanque medio</option>
+                                <option value="tanq_medio_bajo">Tanque medio bajo</option>
+                                <option value="tanq_bajo">Tanque con bajo nivel</option>
+                                <option value="tanq_vacio">Tanque vacío</option>
+                            </select>
+                        </div>
+                    </article>
+                    <article>
+                        <label for="venc_soat">Fecha Vencimiento del SOAT</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Campo de Fecha del Vencimiento del SOAT.-->
+                            <input id="venc_soat" name="venc_soat" type="date" readonly>
+                        </div>
+                        <!--Texto de Fecha de Vencimiento Tecnomecanica.-->
+                        <label for="ven_tecno">Fecha Vencimiento de Tecnomecanica</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Campo fecha de Vencimiento Tecnomecanica-->
+                            <input id="ven_tecno" name="ven_tecno" type="date" readonly>
+                        </div>
+                        <!--Titulo de Poliza Vigencia (Seguro).-->
+                        <label for="vig_poliza">Vigencia de Poliza (Seguro)</label>
+                        <div class="cont_input_cond_lic">
+                            <!--Campo de Vigencia de Poliza.-->
+                            <input id="vig_poliza" name="vig_poliza" type="date" readonly>
+                        </div>
+                    </article>
                 </section>
+                <hr>
                 <!--Sección de Aceite.-->
-                <section>
-                    <!--Titulo de Aceite.-->
-                    <h3>Aceite</h3>
-                    <!--Tabla de Aceite.-->
-                    <table border="1">
-                        <!--Fila Encabezado de la Tabla.-->
-                        <tr>
-                            <!--Encabezado de la Tabla.-->
-                            <th>CONCEPTO</th>
-                            <th>BUENO</th>
-                            <th>MALO</th>
-                            <th>NO APLICA</th>
-                        </tr>
-                        <!--Fila Estado del Aceite.-->
-                        <tr>
-                            <!--Casilla Estado del Aceite.-->
-                            <td><label>Estado Aceite del Motor</label></td>
-                            <!--Botones de Selección. BUENO // MALO // NO APLICA.-->
-                            <td><input type="radio" id="estado_aceite_bueno" value="bueno" name="estado_aceite" required></td>
-                            <td><input type="radio" id="estado_aceite_malo" value="malo" name="estado_aceite" required></td>
-                            <td><input type="radio" id="estado_aceite_no_aplica" value="no_aplica" name="estado_aceite" required></td>
-                        </tr>
-                        <!--Fila Nivel del Aceite-->
-                        <tr>
-                            <!--Casilla Nivel del Aceite-->
-                            <td><label>Nivel Aceite del Motor</label></td>
-                            <!--Botones de Selección. BUENO // MALO // NO APLICA.-->
-                            <td><input type="radio" id="estado_nivel_aceite_bueno" value="bueno" name="estado_nivel_aceite" required></td>
-                            <td><input type="radio" id="estado_nivel_aceite_malo" value="malo" name="estado_nivel_aceite" required></td>
-                            <td><input type="radio" id="estado_nivel_aceite_no_aplica" value="no_aplica" name="estado_nivel_aceite" required></td>
-                        </tr>
-                        <!--Fila Fuga Aceite.-->
-                        <tr>
-                            <!--Casilla Fuga Aceite.-->
-                            <td><label>Fuga Aceite del Motor</label></td>
-                            <!--Botones de Selección. BUENO // MALO // NO APLICA.-->
-                            <td><input type="radio" id="estado_fuga_aceite_bueno" value="bueno" name="estado_fuga_aceite" required></td>
-                            <td><input type="radio" id="estado_fuga_aceite_malo" value="malo" name="estado_fuga_aceite" required></td>
-                            <td><input type="radio" id="estado_fuga_aceite_no_aplica" value="no_aplica" name="estado_fuga_aceite" required></td>
-                        </tr>
-                    </table>
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo de Aceite.-->
+                        <h3>Aceite</h3>
+                    </article>
                 </section>
-                    <!--Section Estado de liquidos.-->
-                <section>
-                    <!--Titulo Estado de Liquidos.-->
-                    <h3>Estado de Liquidos</h3>
-                    <table border="1">
+                <section class="cont_tabla">
+                        <!--Tabla de Aceite.-->
+                        <table>
+                            <!--Fila Encabezado de la Tabla.-->
+                            <tr>
+                                <!--Encabezado de la Tabla.-->
+                                <th>CONCEPTO</th>
+                                <th>BUENO</th>
+                                <th>MALO</th>
+                                <th>NO APLICA</th>
+                            </tr>
+                            <!--Fila Estado del Aceite.-->
+                            <tr>
+                                <!--Casilla Estado del Aceite.-->
+                                <td><label>Estado Aceite del Motor</label></td>
+                                <!--Botones de Selección. BUENO // MALO // NO APLICA.-->
+                                <td><input type="radio" id="estado_aceite_bueno" value="bueno" name="estado_aceite" required></td>
+                                <td><input type="radio" id="estado_aceite_malo" value="malo" name="estado_aceite" required></td>
+                                <td><input type="radio" id="estado_aceite_no_aplica" value="no_aplica" name="estado_aceite" required></td>
+                            </tr>
+                            <!--Fila Nivel del Aceite-->
+                            <tr>
+                                <!--Casilla Nivel del Aceite-->
+                                <td><label>Nivel Aceite del Motor</label></td>
+                                <!--Botones de Selección. BUENO // MALO // NO APLICA.-->
+                                <td><input type="radio" id="estado_nivel_aceite_bueno" value="bueno" name="estado_nivel_aceite" required></td>
+                                <td><input type="radio" id="estado_nivel_aceite_malo" value="malo" name="estado_nivel_aceite" required></td>
+                                <td><input type="radio" id="estado_nivel_aceite_no_aplica" value="no_aplica" name="estado_nivel_aceite" required></td>
+                            </tr>
+                            <!--Fila Fuga Aceite.-->
+                            <tr>
+                                <!--Casilla Fuga Aceite.-->
+                                <td><label>Fuga Aceite del Motor</label></td>
+                                <!--Botones de Selección. BUENO // MALO // NO APLICA.-->
+                                <td><input type="radio" id="estado_fuga_aceite_bueno" value="bueno" name="estado_fuga_aceite" required></td>
+                                <td><input type="radio" id="estado_fuga_aceite_malo" value="malo" name="estado_fuga_aceite" required></td>
+                                <td><input type="radio" id="estado_fuga_aceite_no_aplica" value="no_aplica" name="estado_fuga_aceite" required></td>
+                            </tr>
+                        </table>
+                    </article>
+                </section>
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo Estado de Liquidos.-->
+                        <h3>Estado de Liquidos</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -231,10 +246,14 @@
                         </tr>
                     </table>
                 </section>
-                <section>
-                    <!--Titulo de Fuga de Liquidos.-->
-                    <h3>Fuga de Liquidos</h3>
-                    <table border="1">
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo de Fuga de Liquidos.-->
+                        <h3>Fuga de Liquidos</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -264,10 +283,14 @@
                         </tr>
                     </table>
                 </section>
-                <section>
-                    <!--Titulo Estado Mecánico.-->
-                    <h3>Estado Mecánico</h3>
-                    <table border="1">
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo Estado Mecánico.-->
+                        <h3>Estado Mecánico</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -367,10 +390,14 @@
                         </tr>
                     </table>
                 </section>
-                <section>
-                    <!--Titulo Estado Luces.-->
-                    <h3>Estado Luces</h3>
-                    <table border="1">
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo Estado Luces.-->
+                        <h3>Estado Luces</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -428,10 +455,14 @@
                         </tr>
                     </table>
                 </section>
-                <section>
-                    <!--Titulo Estado de Llantas y Rines-->
-                    <h3>Llantas y Rines</h3>
-                    <table border="1">
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo Estado de Llantas y Rines-->
+                        <h3>Llantas y Rines</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -489,10 +520,14 @@
                         </tr>
                     </table>
                 </section>
-                <section>
-                    <!--Titulo Estado General-->
-                    <h3>Estado General</h3>
-                    <table border="1">
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo Estado General-->
+                        <h3>Estado General</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -564,10 +599,14 @@
                         </tr>
                     </table>
                 </section>
-                <section>
-                    <!--Titulo Equipo de Seguridad.-->
-                    <h3>Equipo de Seguridad</h3>
-                    <table border="1">
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo Equipo de Seguridad.-->
+                        <h3>Equipo de Seguridad</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -604,10 +643,14 @@
                         </tr>
                     </table>
                 </section>
-                <section>
-                    <!--Titulo Estado Fisico.-->
-                    <h3>Estado Fisico</h3>
-                    <table border="1">
+                <section class="cont_titulo_tabla">
+                    <article>
+                        <!--Titulo Estado Fisico.-->
+                        <h3>Estado Fisico</h3>
+                    </article>
+                </section>
+                <section class="cont_tabla">
+                    <table>
                         <tr>
                             <th>CONCEPTO</th>
                             <th>BUENO</th>
@@ -622,6 +665,9 @@
                             <td><input type="radio" id="estado_aseo_no_aplica" value="no_aplica" name="estado-aseo"></td>
                         </tr>
                     </table>
+                </section>
+                <section class="cont_boton">
+                        <button type="submit" >Enviar Formulario</button>
                 </section>
             </form>
         </main>
