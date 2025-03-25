@@ -18,10 +18,14 @@
     font-size: 38px;
 }
 
+body{
+    background-image: url('../imagenes/fondo_transparente.png');
+
+}
+
 main{
     display: flex;
     justify-content: center;
-    background-image: url('../imagenes/fondo_transparente.png');
 }
 
 .contenedor_botones{
@@ -79,6 +83,7 @@ main{
 }
 
 footer{
+    width: auto;
     padding: 20px;
     flex-direction: column;
     display: flex;
@@ -106,12 +111,14 @@ footer{
         text-align: center;
         color: #ffffff;
     }
+
+    body{
+        background-image: url('../imagenes/fondo_transparente.png');    
+    }
     
     main{
         display: flex;
         justify-content: center;
-        background-image: url('../imagenes/fondo_inicio.png');
-        background-size: 9%;
     }
     
     .contenedor_botones{
@@ -176,5 +183,6 @@ footer{
         color: rgb(255, 255, 255);
         background: linear-gradient(45deg, #d11414, #242424);
         font-size: 12px;
+        width: 100%;
     }
 }
