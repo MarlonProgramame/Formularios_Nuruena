@@ -91,6 +91,16 @@ footer{
     background: linear-gradient(45deg, #d11414, #242424);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+footer {
+    margin-top: auto; /* Esto empuja el footer hacia el fondo */
+}
+
 @media screen and (max-width:768px) {
     *{
         margin: 0;
