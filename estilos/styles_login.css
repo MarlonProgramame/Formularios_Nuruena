@@ -21,8 +21,7 @@
 main{
     display: flex;
     justify-content: center;
-    background-image: url('../imagenes/fondo_inicio.png');
-    background-size: 9%;
+    background-image: url('../imagenes/fondo_transparente.png');
 }
 
 .contenedor_botones{
