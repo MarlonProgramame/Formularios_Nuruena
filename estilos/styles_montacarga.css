@@ -57,7 +57,9 @@ form{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    padding: 48px;
+    padding-left: 48px;
+    padding-top: 48px;
+    padding-right: 48px;
     gap: 4%;
 }
 
@@ -98,7 +100,17 @@ form{
     padding-bottom: 0;
 }
 
-/*Continuar aqui.*/
+.cont_contenido{
+    display: flex;
+    justify-content: center;
+}
+
+.cont_contenido select,
+.cont_contenido input{
+    width: 350px;
+    padding: 3px;
+    border-radius: 8px;
+}
 
 .cont_titulo_dat_veh article{
 
@@ -228,6 +240,7 @@ form{
         margin-right: 0;
         width: 97%;
     }
+    
 
     .cont_titulo_tabla article{
 
