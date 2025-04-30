@@ -17,15 +17,21 @@
 
 .cont_img_encabezado img{
 
-    width: 100%;
+    width: 75%;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-.cont_img_encabezado h1,
-.cont_img_encabezado h3{
-
+.cont_img_encabezado h1{
     margin: 20px;
     color: #ffffff;
+}
+.cont_img_encabezado p{
+    
+    font-size: 17.6px;
+    color: #ffffff;
+    margin-bottom: 30px;
+
 }
 
 .cont_indicaciones{
